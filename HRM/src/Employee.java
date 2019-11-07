@@ -1,18 +1,11 @@
 
-enum Department{
-	HR(1), DEV(2), DESIGN(3);
-	
-	private final int value;
-    private Department(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
-}
-
 public abstract class Employee {
+	enum Department{
+		HR,
+		DEV,
+		DESIGN;
+	}
+	
 	private int code;
 	private String name;
 	private String phoneNumber;
